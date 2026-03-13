@@ -1,46 +1,38 @@
 # Community Blood Donor Finder
 
-A simple React web app to find blood donors in your community.
+A responsive React app to locate and request nearby blood donors by blood group and city.
 
-## Getting Started
+## ✅ Key Features
 
-1. Install dependencies:
-   ```
-   npm install
-   ```
+- Search donors by **blood group** and **city**
+- View donor **availability**, **location**, and **age**
+- “Request Blood” button to mark donors as requested
+- Responsive layout (mobile/tablet/desktop)
+- Clean, accessible UI with healthcare-inspired styling
 
-2. Start the development server:
-   ```
-   npm start
-   ```
+## 🧰 Tech Stack
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+- **React** (Create React App)
+- **JavaScript (ES6+)**
+- **CSS** (Flexbox + Grid, responsive design)
+- **Mock data** from JSONPlaceholder (REST API)
 
-## Features
+## 🚀 Setup & Run
 
-- Filter donors by blood type and location
-- View donor statistics
-- Responsive design
-- Clean, professional layout with healthcare theme
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── Header.js
-│   ├── FilterPanel.js
-│   ├── StatsPanel.js
-│   ├── DonorList.js
-│   └── DonorCard.js
-├── styles/
-│   └── main.css
-├── App.js
-└── index.js
+```bash
+npm install
+npm start
 ```
 
-## Technologies Used
+Then open: http://localhost:3000
 
-- React (functional components)
-- Basic React hooks (useState, useEffect)
-- Plain CSS for styling
+## 📁 Project Structure
+
+- `src/App.js` — core app logic and state management
+- `src/components/` — UI components (Header, Filters, Donor list, etc.)
+- `src/main.css` — global styling
+
+## ⚠️ Notes
+
+- Donor data comes from a public mock API (JSONPlaceholder) and is not persisted.
+- “Request Blood” state is handled locally and resets on refresh.
